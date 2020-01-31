@@ -13,74 +13,87 @@ public class Main {
 
 
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("/Users/joenewman/IdeaProjects/Historgram/t1.txt");
+        File file = new File("t1.txt");
         Scanner scan = new Scanner(file);
+
 
         int FileLength = 0;
         int CountA = 0; int CountB = 0; int CountC = 0; int CountD = 0; int CountE = 0;
         int CountF = 0; int CountG = 0; int CountH = 0; int CountI = 0; int CountJ = 0;
-        int CountK = 0;
+        int CountK = 0; int CountL = 0; int CountM = 0; int CountN = 0; int CountO = 0; int CountP = 0;
+        int CountQ = 0; int CountR = 0; int CountS = 0; int CountT = 0; int CountU = 0;
+        int CountV = 0; int CountW = 0; int CountX = 0; int CountY = 0; int CountZ = 0;
         String CurrentLine = "";
-        while(scan.nextLine() != null){
-            CurrentLine = scan.next();
-            if(CurrentLine != null) {
-                FileLength++;
+        try {
+            while (scan.hasNextLine()) {
+                CurrentLine = scan.nextLine();
+                if (CurrentLine != null) {
+                    FileLength++;
+                }
+                if (CurrentLine == "A") {
+                    CountA++;
+                }else if (CurrentLine == "B") {
+                    CountB++;
+                }else if (CurrentLine == "C") {
+                    CountC++;
+                }else if (CurrentLine == "D") {
+                    CountD++;
+                }else if (CurrentLine == "E") {
+                    CountE++;
+                }else if (CurrentLine == "F") {
+                    CountF++;
+                }else if (CurrentLine == "G") {
+                    CountG++;
+                }else if (CurrentLine == "H") {
+                    CountH++;
+                }else if (CurrentLine == "I") {
+                    CountI++;
+                }else if (CurrentLine == "J") {
+                    CountJ++;
+                }else if (CurrentLine == "K") {
+                    CountK++;
+                }else if (CurrentLine == "L") {
+                    CountL++;
+                }else if (CurrentLine == "M") {
+                    CountM++;
+                }else if (CurrentLine == "N") {
+                        CountN++;
+                }else if (CurrentLine == "O") {
+                        CountO++;
+                }else if (CurrentLine == "P") {
+                        CountP++;
+                }else if (CurrentLine == "Q") {
+                        CountQ++;
+                }else if (CurrentLine == "R") {
+                        CountR++;
+                }else if (CurrentLine == "S") {
+                        CountS++;
+                }else if (CurrentLine == "T") {
+                        CountT++;
+                }else if (CurrentLine == "U") {
+                        CountU++;
+                }else if (CurrentLine == "V") {
+                        CountV++;
+                }else if (CurrentLine == "W") {
+                        CountW++;
+                }else if (CurrentLine == "X") {
+                        CountX++;
+                }else if (CurrentLine == "Y") {
+                        CountY++;
+                }else if (CurrentLine == "Z") {
+                        CountZ++;
+                }
+                System.err.println(FileLength);
+                System.out.println(CountA);
+                System.out.println(CountZ);
             }
+        }catch (NoSuchElementException e) {
+            System.err.println("No such Element Found..." + e);
         }
 
-       for (int g = 0; g < FileLength; g++) {
-           System.out.println(scan.nextLine());
-       }
-        try {
-            while (scan.hasNext()) {
-                for (int i = 0; i < scan.nextLine().length(); i++) {
-                    if (scan.next() == "A") {
-                        CountA++;
-                    }
-                    if(scan.next() == "B")
-                    {
-                        CountB++;
-                    }
-                    if (scan.next() == "C")
-                    {
-                        CountC++;
-                    }
-                    if(scan.next() == "D")
-                    {
-                        CountD++;
-                    }
-                    if(scan.next() == "E")
-                    {
-                        CountE++;
-                    }
-                    if (scan.next() == "F") {
-                        CountF++;
-                    }
-                    if(scan.next() == "G")
-                    {
-                        CountG++;
-                    }
-                    if (scan.next() == "H")
-                    {
-                        CountH++;
-                    }
-                    if(scan.next() == "I")
-                    {
-                        CountI++;
-                    }
-                    if(scan.next() == "J")
-                    {
-                        CountJ++;
-                    }
-                    
-                }
-                count1[0] = CountA; count1[1] = CountB; count1[2] = CountC;count1[3] = CountD;count1[4] = CountE;
-                count1[5] = CountF; count1[6] = CountG;
-            }
-            System.err.println(CountA);
-        } catch(NoSuchElementException e)
-        {
-            System.err.println("No Char found");
+               /* count1[0] = CountA; count1[1] = CountB; count1[2] = CountC;count1[3] = CountD;count1[4] = CountE;
+                count1[5] = CountF; count1[6] = CountG;*/
+
+
         }
-    }
 }
