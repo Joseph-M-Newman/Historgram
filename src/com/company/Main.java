@@ -9,8 +9,8 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Main {
-    static int[] count1 = new int[28]; // 11 different "spaces" for ints
-    static String[] letters = {"A","B","C","D","E","F","G","H","I","J","K"};
+    static int[] count1 = new int[25]; // 11 different "spaces" for ints
+    static String[] letters = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"};
 
 
 
